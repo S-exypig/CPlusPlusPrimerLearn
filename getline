@@ -19,6 +19,8 @@ int main()
 	cin.sync();
 	if (ch == '2'){
 		cout << "please Enter :   Welcome to C++ family!   " << endl;
+		cin.get（）; //输入ch后一般会接一个\n表示输入完成，此时换行符还存在于缓冲区中，
+			     //而getline（）会读取这个换行符导致跳过输入
 		getline(cin, line);
 		cout << "output:" << endl;
 		cout << line << endl;
