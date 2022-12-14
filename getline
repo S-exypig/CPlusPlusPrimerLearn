@@ -1,0 +1,29 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+	string word, line;
+	cout << "1 word,2 line" << endl;
+	char ch;
+	cin >> ch;
+	if (ch == '1') {
+		cout << "please Enter :   Welcome to C++ family!   " << endl;
+		cin >> word;
+		cout << "output:" << endl;
+		cout << word << endl;
+		return 0;
+	}
+	cin.clear();
+	cin.sync();
+	if (ch == '2'){
+		cout << "please Enter :   Welcome to C++ family!   " << endl;
+		getline(cin, line);
+		cout << "output:" << endl;
+		cout << line << endl;
+		return 0;
+	}
+	cout << "ERROR input!";
+	return -1;
+}
